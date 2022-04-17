@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='en'> 
+   
+    <head>
+        <link rel="icon" href="images/clapper_png_favicon.png">
+        <link rel="stylesheet" href="css/html5reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title> Contact Page</title>
+
+        <script src="https://kit.fontawesome.com/0a02460463.js" crossorigin="anonymous"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJPB2FYLEW"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SJPB2FYLEW');
+        </script>
+    </head>
+
+    <body>
+    <a class = "skip" href="#main">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="favorite_sitcoms.html">Favorite Sitcom</a></li>
+                <li><a href="favorite_series.html">Favorite Series</a></li>
+                <li class='active'><a href="contact.html">Contact Page</a></li>
+            </ul>
+        </nav>
+    </header>
+     
+    
+     <main id="main">
+
+        <h1>
+            Contact Page
+        </h1>
+
+        <div>
+             <img src="images/list.png" alt ="Blank List" width="200"/>
+        </div>
+        
+        <div>
+            <p>
+                I want to thank you for visiting my site and taking the time to go through my favorite tv shows with me. I hope you were able to find a few suggestions that are new and interesting to you. Whether you’re interested in hour-long series that show gore and action, or interested in family family comedy shows. Whether you enjoy watching American or international shows. I believe I incorporate a wide variety of shows that could suit your needs.             </p> 
+        </div>
+
+        <div>
+            <p>
+                Furthermore, just as I provided you all with great suggestions, I would love to receive some as well. This page allows you to send me an email at my personal email address. This way, I would hope that I can receive some great suggestions of television shows that are not on these lists. Sending two or three of your favorite shows would be greatly appreciated. Afterall, I can never have too many shows to watch because it seems like I finish one every other week. Thank you again for your time.
+            </p>
+        </div>
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="mexico">Mexico</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="russia">Russia</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Favorite shows.." style="height:200px"></textarea>
+
+              <input type="submit" value="Send">
+          
+            </form>
+          </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy;Marco Lang
+        </p>
+        <div id="test">
+            <i class="fa-solid fa-tv"></i>
+        </div>
+    </footer>
+    </body>
+    </html>
