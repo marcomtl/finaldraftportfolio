@@ -7,7 +7,13 @@
 }
 
 img{
-    border:2px dashed #000000;
+    border:2px double #000000;
+    padding: 10px;
+    margin: 38px;
+    width: 200px;
+}
+.index_image{
+    border:2px double white;
     padding: 10px;
     margin: 38px;
     width: 200px;
@@ -28,6 +34,7 @@ nav li{
 
 nav a{
     text-decoration: none;
+    text-align: center;
     color: #000000;
 }
 
@@ -40,13 +47,20 @@ nav a{
 h1{
     font-weight: bold;
     font-size: 25px;
+    text-align: center;
 }
 
 footer{
-    width: 100px;
+    display: -webkit-inline-box;
+    width: auto;
 	padding: 10px;
 	margin: 5px;
 	border: 1px solid black;
+}
+
+#test .fa-solid{
+    margin-right: 10px;
+    color: #f82121cc ;
 }
 
 /* Checkpointmobile */
@@ -66,14 +80,18 @@ footer{
 
 body{
     font-family: 'Roboto', serif;
-    background-color: white;
+    background-color: rgb(190, 190, 190);
     padding: 30px;
     
 }
 
 #index{
-    background-image: url("../images/binge\ watching.jpg") ;
-    background-size: 100%;
+    background-image: url("../images/binge\ watching.jpg");
+    background-size: 100% auto;
+}
+
+#contact{
+    background-color: white;
 }
 
 .index_h1{
@@ -81,8 +99,15 @@ body{
 }
 .paragraph_1{
     color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
+.paragraph_2{
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 #images{
     display: flex;
     flex-direction: column;
@@ -152,3 +177,7 @@ input[type=text], select {
         animation: none;
     } 
 }
+
+/* @media screen and (min-width: XXXpx) {
+
+} */
