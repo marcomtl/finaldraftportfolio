@@ -7,7 +7,13 @@
 }
 
 img{
-    border:2px dashed #000000;
+    border:2px double #000000;
+    padding: 10px;
+    margin: 38px;
+    width: 200px;
+}
+.index_image{
+    border:2px double white;
     padding: 10px;
     margin: 38px;
     width: 200px;
@@ -28,6 +34,7 @@ nav li{
 
 nav a{
     text-decoration: none;
+    text-align: center;
     color: #000000;
 }
 
@@ -40,6 +47,7 @@ nav a{
 h1{
     font-weight: bold;
     font-size: 25px;
+    text-align: center;
 }
 
 footer{
@@ -66,7 +74,7 @@ footer{
 
 body{
     font-family: 'Roboto', serif;
-    background-color: white;
+    background-color: rgb(190, 190, 190);
     padding: 30px;
     
 }
@@ -81,8 +89,15 @@ body{
 }
 .paragraph_1{
     color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
+.paragraph_2{
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 #images{
     display: flex;
     flex-direction: column;
