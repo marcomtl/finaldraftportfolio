@@ -6,6 +6,20 @@
     left: 10px;
 }
 
+.parallax {
+    /* The image used */
+    background-image: url("../images/parallax.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 2px black;
+  }
 img{
     border:2px double #000000;
     padding: 10px;
@@ -205,11 +219,7 @@ input[type=text], select {
 }
 
 
-@media screen and (prefers-reduced-motion: reduce) {
-    .images{
-        animation: none;
-    } 
-}
+
 
 
 /* Transition into tablet view of the website */
@@ -271,22 +281,23 @@ input[type=text], select {
 
         #all_images_series{
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns:  auto auto;
         }
 
         #all_images_sitcoms{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            align-items: baseline;
         }
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
     #all_images_series{
         display: grid;
         align-items: baseline;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto;
     }
 
     #all_images_sitcoms{
@@ -307,3 +318,11 @@ input[type=text], select {
     }
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+    .images{
+        animation: none;
+    } 
+    .parallax {
+        background-attachment: inherit;
+      }
+}
